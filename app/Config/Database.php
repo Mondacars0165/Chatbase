@@ -38,13 +38,14 @@ class Database extends Config
     ];
 
     public $oracle = [
-        'DSN'      => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1523))(CONNECT_DATA=(SERVICE_NAME=freepdb1)))',
+        'DSN'      => '//localhost:1521/freepdb1',  // asegúrate que esté en minúsculas y correcto
         'username' => 'system',
-        'password' => 'oracle123',
+        'password' => 'oracle123',                   // o el password correcto
         'DBDriver' => 'OCI8',
         'charset'  => 'AL32UTF8',
         'DBDebug'  => (ENVIRONMENT !== 'production'),
     ];
+
 
 
 
